@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"bf96dedaf39200ae","x":-240,"y":-220,"width":250,"height":60,"type":"text","text":"Prompt user for temperature in celsius "},
+		{"id":"a27ac6f2474a0ef2","x":-240,"y":-100,"width":250,"height":80,"type":"text","text":"Multiply input by 9/5 and add 32"},
+		{"id":"14460d8404276719","x":-240,"y":40,"width":250,"height":60,"type":"text","text":"Output degrees in fahrenheit"},
+		{"id":"2b93f72f978b225d","x":330,"y":-280,"width":250,"height":60,"type":"text","text":"Is the temperature below 0 degrees"},
+		{"id":"4d492260c2088d57","x":580,"y":-130,"width":250,"height":60,"type":"text","text":"Output: Just rain today"},
+		{"id":"3897656addc53a34","x":80,"y":-130,"width":250,"height":60,"type":"text","text":"Output: It might snow!"},
+		{"id":"9a040fcb3ffb977b","x":330,"y":40,"width":250,"height":60,"type":"text","text":"Quit program"},
+		{"id":"52f96ed3cba09fd4","x":1180,"y":-340,"width":250,"height":60,"type":"text","text":"Prompt user for password"},
+		{"id":"1da535eb57ed9d8b","x":1180,"y":-120,"width":250,"height":60,"type":"text","text":"is password correct?"},
+		{"id":"c7ff2b908b76a18d","x":1180,"y":40,"width":250,"height":60,"type":"text","text":"log in user"},
+		{"id":"f36287ec94022a37","x":1500,"y":-220,"width":250,"height":60,"type":"text","text":"Output: Incorrect password, try again\n"}
+	],
+	"edges":[
+		{"id":"9e93817ceeb58f9c","fromNode":"bf96dedaf39200ae","fromSide":"bottom","toNode":"a27ac6f2474a0ef2","toSide":"top"},
+		{"id":"deddac0058fda5f5","fromNode":"a27ac6f2474a0ef2","fromSide":"bottom","toNode":"14460d8404276719","toSide":"top"},
+		{"id":"08858ecda89fca29","fromNode":"2b93f72f978b225d","fromSide":"left","toNode":"3897656addc53a34","toSide":"top","label":"True"},
+		{"id":"d71f7cf34d9740ef","fromNode":"2b93f72f978b225d","fromSide":"right","toNode":"4d492260c2088d57","toSide":"top","label":"False"},
+		{"id":"eb4da4bbff60284d","fromNode":"3897656addc53a34","fromSide":"bottom","toNode":"9a040fcb3ffb977b","toSide":"top"},
+		{"id":"6136bab03a2d34a1","fromNode":"4d492260c2088d57","fromSide":"bottom","toNode":"9a040fcb3ffb977b","toSide":"top"},
+		{"id":"b77049d6efc6ea45","fromNode":"52f96ed3cba09fd4","fromSide":"bottom","toNode":"1da535eb57ed9d8b","toSide":"top"},
+		{"id":"16c0cf4f5e7479ed","fromNode":"1da535eb57ed9d8b","fromSide":"bottom","toNode":"c7ff2b908b76a18d","toSide":"top","label":"True"},
+		{"id":"b4d01da5c5a8528f","fromNode":"1da535eb57ed9d8b","fromSide":"right","toNode":"f36287ec94022a37","toSide":"bottom","label":"False"},
+		{"id":"30dff03c6f7fa019","fromNode":"f36287ec94022a37","fromSide":"top","toNode":"52f96ed3cba09fd4","toSide":"right"}
+	]
+}
